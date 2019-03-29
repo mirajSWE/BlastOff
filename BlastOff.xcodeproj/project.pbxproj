@@ -10,8 +10,9 @@
 		7C6D4A7B224ED2F400310D4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6D4A7A224ED2F400310D4C /* AppDelegate.swift */; };
 		7C6D4A7D224ED2F400310D4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6D4A7C224ED2F400310D4C /* ViewController.swift */; };
 		7C6D4A80224ED2F400310D4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C6D4A7E224ED2F400310D4C /* Main.storyboard */; };
-		7C6D4A82224ED2F600310D4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C6D4A81224ED2F600310D4C /* Assets.xcassets */; };
 		7C6D4A85224ED2F600310D4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C6D4A83224ED2F600310D4C /* LaunchScreen.storyboard */; };
+		7C6D4A8D224ED34D00310D4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C6D4A8C224ED34D00310D4C /* Assets.xcassets */; };
+		7C6D4A91224ED3B900310D4C /* hustle-on.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7C6D4A90224ED3B900310D4C /* hustle-on.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +20,10 @@
 		7C6D4A7A224ED2F400310D4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C6D4A7C224ED2F400310D4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7C6D4A7F224ED2F400310D4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7C6D4A81224ED2F600310D4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C6D4A84224ED2F600310D4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C6D4A86224ED2F600310D4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C6D4A8C224ED34D00310D4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../../../Downloads/hustle-mode/hustle-mode/Assets.xcassets"; sourceTree = "<group>"; };
+		7C6D4A90224ED3B900310D4C /* hustle-on.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "hustle-on.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +56,11 @@
 		7C6D4A79224ED2F400310D4C /* BlastOff */ = {
 			isa = PBXGroup;
 			children = (
+				7C6D4A90224ED3B900310D4C /* hustle-on.wav */,
 				7C6D4A7A224ED2F400310D4C /* AppDelegate.swift */,
 				7C6D4A7C224ED2F400310D4C /* ViewController.swift */,
 				7C6D4A7E224ED2F400310D4C /* Main.storyboard */,
-				7C6D4A81224ED2F600310D4C /* Assets.xcassets */,
+				7C6D4A8C224ED34D00310D4C /* Assets.xcassets */,
 				7C6D4A83224ED2F600310D4C /* LaunchScreen.storyboard */,
 				7C6D4A86224ED2F600310D4C /* Info.plist */,
 			);
@@ -122,8 +125,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C6D4A91224ED3B900310D4C /* hustle-on.wav in Resources */,
 				7C6D4A85224ED2F600310D4C /* LaunchScreen.storyboard in Resources */,
-				7C6D4A82224ED2F600310D4C /* Assets.xcassets in Resources */,
+				7C6D4A8D224ED34D00310D4C /* Assets.xcassets in Resources */,
 				7C6D4A80224ED2F400310D4C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
