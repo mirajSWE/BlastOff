@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVFoundation
+
 
 class ViewController: UIViewController
 {
@@ -17,10 +19,25 @@ class ViewController: UIViewController
     @IBOutlet weak var rocket: UIImageView!
     
     
+    var player: AVAudioPlayer!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let path = Bundle.main.path(forResource: "hustle-on", ofType: "wav")!
+        let url = URL(fileURLWithPath: path)
+        do
+        {
+            player = try AVAudioPlayer(contentsOf: url)
+            player.prepareToPlay()
+            
+        } catch let error as NSError {
+            print(error.description)
+        }
+      
+        
+        
     }
 
     @IBAction func powerButtonPressed(_ sender: Any)
@@ -29,7 +46,18 @@ class ViewController: UIViewController
         blueBackground.isHidden = true
         powerButton.isHidden = true
         
+        player.play()
+        
+        UIView.animate(withDuration: 2.3, animations: {
+            self.rocket.frame = CGRect(x: 0, y: 20, width: 375, height: 201)
+        }) { (finished) in
+            
+        }
+        
     }
     
 }
+
+
+
 
