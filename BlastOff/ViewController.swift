@@ -8,13 +8,28 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
 
-    override func viewDidLoad() {
+    @IBOutlet weak var blueBackground: UIImageView!
+    @IBOutlet weak var powerButton: UIButton!
+    @IBOutlet weak var scene: UIView!
+    @IBOutlet weak var rocket: UIImageView!
+    
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func powerButtonPressed(_ sender: Any)
+    {
+        scene.isHidden = false
+        blueBackground.isHidden = true
+        powerButton.isHidden = true
+        
+    }
+    
 }
 
