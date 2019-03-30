@@ -18,7 +18,6 @@ class ViewController: UIViewController
     @IBOutlet weak var scene: UIView!
     @IBOutlet weak var rocket: UIImageView!
     
-    
     var player: AVAudioPlayer!
     
     override func viewDidLoad()
@@ -27,6 +26,7 @@ class ViewController: UIViewController
         
         let path = Bundle.main.path(forResource: "hustle-on", ofType: "wav")!
         let url = URL(fileURLWithPath: path)
+        
         do
         {
             player = try AVAudioPlayer(contentsOf: url)
@@ -35,8 +35,6 @@ class ViewController: UIViewController
         } catch let error as NSError {
             print(error.description)
         }
-      
-        
         
     }
 
@@ -57,7 +55,3 @@ class ViewController: UIViewController
     }
     
 }
-
-
-
-
